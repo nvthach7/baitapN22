@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="..\Bootstrap\css\bootstrap.min.css">
+	<link rel="stylesheet" href="..\Bootstrap\js\bootstrap.bundle.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="..\CSS\main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+	<link rel="stylesheet" href="..\Jquery\jquery-3.6.4.min.js">
+    <title>Giới thiệu</title>
+	<style>
+		h2,h3{
+			margin: 20px;
+		}
+		.intro{
+			display:grid;
+			grid-template-columns: 4fr 1fr;
+		}
+		.tabs {
+			display: flex;
+			position: relative;
+			margin-left: 50px;
+		}
+		.tabs .line {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 0;
+			height: 6px;
+			border-radius: 15px;
+			background-color: #c23564;
+			transition: all 0.2s ease;
+		}
+		.tab-item {
+			min-width: 80px;
+			padding: 16px 20px 11px 20px;
+			font-size: 20px;
+			text-align: center;
+			color: #c23564;
+			background-color: #fff;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			border-bottom: 5px solid transparent;
+			opacity: 0.6;
+			cursor: pointer;
+			transition: all 0.5s ease;
+
+		}
+		.tab-item:hover {
+			opacity: 1;
+			background-color: rgba(194, 53, 100, 0.05);
+			border-color: rgba(194, 53, 100, 0.1);
+		}
+		.tab-content {
+			padding: 28px 0;
+			margin-left: 50px;
+		}
+		.tab-pane {
+			color: #333;
+			display: none;
+		}
+		.tab-pane.active {
+			display: block;
+		}
+		.tab-pane h2 {
+			font-size: 24px;
+			margin-bottom: 8px;
+		}
+		.img-introduce{
+			height: 200px;
+			width: 200px;
+		}
+		#warper{
+			background-color: #fff;
+		}
+		td{
+			border: 1px solid #333;
+			padding: 10px 50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="div">
+		<header class="header" style="text-align: center;">
+			<button class="button"><a href="login.html">Đăng nhập</a></button> &nbsp;
+			<button class="button"><a href="Register.html">Đăng kí</a></button>
+		</header>
+	</div>
+	<nav class="navbar navbar-expand bg-light" >
+		<div class="container">
+			<ul class="navbar-nav " >
+				<li class="nav-item">
+					<a href="homepage.html" class="nav-link active" aria-current="page"><i class="fa fa-home" aria-hidden="true" style="font-size: 20px;"></i></a>
+				</li>
+				<li class="nav-item">
+					<a href="product.html" class="nav-link active" aria-current="page">SẢN PHẨM</a>
+				</li>
+				<li class="nav-item">
+					<a href="introduce.html" class="nav-link active" aria-current="page">GIỚI THIỆU</a>
+				</li>
+				<li class="nav-item">
+					<a href="phan_hoi.html" class="nav-link active" aria-current="page">PHẢN HỒI</a>
+				</li>
+			</ul>
+		</div>
+		<form class="d-flex">
+			<input class="form-control shadow-none" type="search" placeholder="Bạn muốn tìm gì" >
+			<button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+		  </form>
+	</nav>
+	</div>
+	<div class="banner">
+		<img src="..\img\banner2.webp" alt="banner" >
+	</div>
+	<div class="main-content">
+		<div id="warper">
+			<article>
+				<h3>GIỚI THIỆU</h3>
+			</article>
+			<div class="intro">
+				<div class="c1">
+					<h2>Công ty TNHH</h2>
+					<div class="tabs">
+						<div class="tab-item active">
+						  Giới thiệu
+						</div>
+						<div class="tab-item">
+						  Tuyển dụng
+						</div>
+						<div class="tab-item">
+						  Liên hệ
+						</div>
+						<div class="tab-item">
+						  Thành viên
+						</div>
+						<div class="line"></div>
+					</div>
+					<div class="tab-content">
+						<div class="tab-pane active">
+						  <h2>Giới thiệu về Siêu thị điện máy</h2>
+						  <p><a href="homepage.html" src="#">Sieuthidienmay.com</a> là...</p>
+						</div>
+						<div class="tab-pane">
+							<h2>Cơ hội nghề nghiệp tại Siêu thị điện máy</h2>
+							<p>Chính sách và quy định</p>
+							<p>Bảo hành và Khiếu nại</p>
+							<p>Hỗ trợ khách hàng</p>
+							<p>Tài khoản và thành viên</p>
+						</div>
+						<div class="tab-pane">
+							<h2>Liên hệ với Siêu thị điện máy</h2>
+
+							<p></p>
+						</div>
+						<div class="tab-pane">
+							<h2>Thành viên nhóm 7 - Hệ thống công nghệ web</h2>
+							<table>
+								<tr>
+									<td>Huỳnh Đặng Ngọc Khánh</td>
+									<td>21125491</td>
+								</tr>
+								<tr>
+									<td>Vũ Nguyễn Thịnh Khang</td>
+									<td>21048021</td>
+								</tr>
+								<tr>
+									<td>Nguyễn Quốc Lâm</td>
+									<td>21046571</td>
+								</tr>
+								<tr>
+									<td>Đào Phan Khanh</td>
+									<td>21132251</td>
+								</tr>
+								<tr>
+									<td>Lê Duy Hoàng Linh</td>
+									<td>21003585</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="c2">
+					<h2 style="margin-left: 0px;">Sản phẩm gợi ý</h2>
+					<div>
+						<a  href="">
+							<h4>Máy lạnh LG</h4>
+							<img src="../img/may-lanh-lg-inverter-1-5-hp-v13apfuv-model-2022.webp" class="img-introduce">
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<h4>Máy lạnh Panasonic</h4>
+							<img src="../img/may-lanh-panasonic-inverter-1-0hp-cu-cs-wpu9xkh-8.webp" class="img-introduce">
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<h4>Máy lạnh Hitachi</h4>
+							<img src="../img/may-lanh-daikin-2-0-hp-ftf50xv1v-t.webp" class="img-introduce">
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<h4>Máy lạnh Daikin</h4>
+							<img src="../img/may-lanh-daikin-2-0-hp-ftf50xv1v-t.webp" class="img-introduce">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		const $ = document.querySelector.bind(document);
+		const $$ = document.querySelectorAll.bind(document);
+
+		const tabs = $$(".tab-item");
+		const panes = $$(".tab-pane");
+
+		const tabActive = $(".tab-item.active");
+		const line = $(".tabs .line");
+
+		requestIdleCallback(function () {
+		line.style.left = tabActive.offsetLeft + "px";
+		line.style.width = tabActive.offsetWidth + "px";
+		});
+
+		tabs.forEach((tab, index) => {
+		const pane = panes[index];
+
+		tab.onclick = function () {
+
+			$(".tab-pane.active").classList.remove("active");
+
+			line.style.left = this.offsetLeft + "px";
+			line.style.width = this.offsetWidth + "px";
+
+			pane.classList.add("active");
+		};
+		});
+	</script>
+	<div>
+		<footer class="footer">
+			<div>
+				<footer class="footer">
+
+					<ul >
+						<li>THÔNG TIN LIÊN LẠC</li>
+						<li>KD online: <span>0909 811 373- 0902 820 616</span></li>
+						<li>KD Showroom: <span>0901 344 494</span></li>
+						<li>KD Khách tỉnh: <span>0898 477 688</span></li>
+						<li>Hỗ trợ KH: <span>(028) 3878 668-(028) 3890 2828</span></li>
+					</ul>
+					<ul >
+						<li>Bảng báo giá máy lạnh NEW</li>
+						<li>Chính sách bảo hành</li>
+						<li>Chính sách vận chuyển</li>
+						<li>Hướng dẫn mua hàng máy lạnh</li>
+						<li>Chính sách đổi - trả hàng</li>
+						<li>Chính sách bảo mật</li>
+					</ul>
+					<ul>
+						<li>Tích điểm Quà tặng VIP</li>
+						<li>DV vệ sinh máy lạnh</li>
+						<li>Lịch sử mua hàng</li>
+						<li>Tìm hiểu về mua trả góp</li>
+					</ul>
+				</footer>
+		</footer>
+	</div>
+</body>
+</html>

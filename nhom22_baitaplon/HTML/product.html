@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sản phẩm</title>
+	<link rel="stylesheet" href="..\Bootstrap\css\bootstrap.min.css">
+	<link rel="stylesheet" href="..\Bootstrap\js\bootstrap.bundle.js">
+	<link rel="stylesheet" href="..\CSS\main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body >
+	<div class="div">
+		<header class="header" style="text-align: center;">
+			<button class="button"><a href="Login.html">Đăng nhập</a></button> &nbsp;
+			<button class="button"><a href="Register.html">Đăng kí</a></button>
+		</header>
+	</div>
+	<nav class="navbar navbar-expand bg-light" >
+		<div class="container">
+			<ul class="navbar-nav " >
+				<li class="nav-item">
+					<a href="homepage.html" class="nav-link active" aria-current="page"><i class="fa fa-home" aria-hidden="true" style="font-size: 20px;"></i></a>
+				</li>
+				<li class="nav-item">
+					<a href="product.html" class="nav-link active" aria-current="page">SẢN PHẨM</a>
+				</li>
+				<li class="nav-item">
+					<a href="introduce.html" class="nav-link active" aria-current="page">GIỚI THIỆU</a>
+				</li>
+				<li class="nav-item">
+					<a href="" class="nav-link active" aria-current="page">PHẢN HỒI</a>
+				</li>
+			</ul>
+		</div>
+		<form class="d-flex">
+			<input class="form-control shadow-none" type="search" placeholder="Bạn muốn tìm gì" >
+			<button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+		  </form>
+	</nav>
+	</div>
+	<div class="banner" id="slide">
+		<img src="../img/banner1.webp" alt="banner" id="image">
+		<i class="fa fa-circle-arrow-right" onclick="next()"></i>
+		<i class="fa fa-circle-arrow-left" onclick="prev()"></i>
+		<script  lang="javascript">
+			var arr_img=[
+			"../img/banner1.webp",
+			"../img/banner2.webp",
+			"../img/banner3.webp",
+			"../img/banner4.webp"
+			]
+			var index=0;
+			function next(){
+				index++;
+				 if(index>=arr_img.length) {
+				 	index=0;
+				 }
+				document.getElementById("image").src=arr_img[index];
+			}
+			function prev(){
+				index--;
+				 if(index<0) {
+				 	index=arr_img.length-1;
+				 }
+				document.getElementById("image").src=arr_img[index];
+			}
+		 </script>
+	</div>
+	<div class="main-content">
+
+		<div class="warper">
+			<article>
+				<h3 class="h3">TẤT CẢ SẢN PHẨM</h3>
+			</article>
+			<div class="fbanner">
+				<div class="large-banner">
+					<img src="..\img\largeBanner1.png" alt="">
+				</div>
+				<div class="small-banner">
+					<div class="innerBanner"><img src="..\img\smallBanner1.png" alt=""></div>
+					<div class="innerBanner"><img src="..\img\smallBanner2.png" alt=""></div>
+				</div>
+			</div>
+			<div >
+				<ul class="product-list">
+					<li class="product-item">
+						<ul class="product-info">
+							<li>
+								<div class="brand-mark">
+									<img src="..\img\Daikin_logo.png" alt="daikin">
+								</div>
+							</li>
+							<li>
+								<div class="thumbnail">
+									<a href="Product_1.html"><img src="..\img\may-lanh-daikin-2-5-hp-ftf60xv1v-jpg.webp" alt=""></a>
+								</div>
+							</li>
+							<li>
+								<div class="product-name"><a href="Product_1.html">Máy lạnh Daikin (2.5 Hp) FTF60XV1V</a></div>
+							</li>
+							<li>
+								<div class="price">21,800,000<sup>đ</sup></div>
+							</li>
+						</ul>
+					</li>
+
+					<li class="product-item">
+						<ul class="product-info">
+							<li>
+								<div class="brand-mark">
+									<img src="..\img\Daikin_logo.png" alt="daikin"  >
+								</div>
+							</li>
+							<li>
+								<div class="thumbnail">
+									<a href="Product_2.html"><img src="..\img\may-lanh-daikin-inverter-3-0hp-ftky71wvmv-t.webp" alt=""></a>
+
+								</div>
+							</li>
+							<li>
+								<div class="product-name"><a href="Product_2.html">Máy lạnh Daikin inverter 3.0Hp FTKY71WVMV</a></div>
+							</li>
+							<li>
+								<div class="price">33,200,000<sup>đ</sup></div>
+							</li>
+						</ul>
+					</li>
+
+					<li class="product-item">
+						<ul class="product-info">
+							<li>
+								<div class="brand-mark">
+									<img src="..\img\Mitsubishi_logo.png" >
+								</div>
+							</li>
+							<li>
+								<div class="thumbnail">
+									<a href="Product_3.html"><img src="..\img\may-lanh-mitsubishi-heavy-inverter-1-0hp-srk10yxs-w5.webp" alt="" height="250"></a>
+								</div>
+							</li>
+							<li>
+								<div class="product-name"><a href="Product_3.html">Máy lạnh Mitsubishi Heavy Inverter 1.0Hp SRK10YXS-W5</a></div>
+							</li>
+							<li>
+								<div class="price">11,950,000<sup>đ</sup></div>
+							</li>
+						</ul>
+					</li>
+
+					<li class="product-item">
+						<ul class="product-info">
+							<li>
+								<div class="brand-mark">
+									<img src="..\img\LG_logo.png" alt="daikin"  >
+								</div>
+							</li>
+							<li>
+								<div class="thumbnail">
+									<a href="Product_4.html"><img src="..\img\may-lanh-lg-inverter-2-5-hp-v24enf1.webp" alt="" ></a>
+								</div>
+							</li>
+							<li>
+								<div class="product-name"><a href="Product_4.html">Máy lạnh LG inverter 2.5 Hp V24ENF1</a></div>
+							</li>
+							<li>
+								<div class="price">15,750,000<sup>đ</sup></div>
+							</li>
+						</ul>
+					</li>
+					<li class="product-item">
+						<ul class="product-info">
+							<li>
+								<div class="brand-mark">
+									<img src="..\img\panasonic_logo.png" alt="daikin"  >
+								</div>
+							</li>
+							<li>
+								<div class="thumbnail">
+									<a href="Product_5.html"><img src="..\img\may-lanh-panasonic-inverter-1-5hp-cu-cs-wpu12xkh-8.webp" alt="" height="250"></a>
+								</div>
+							</li>
+							<li>
+								<div class="product-name"><a href="Product_5.html">Máy lạnh Panasonic inverter 1.5Hp CU/CS-WPU12XKH-8</a></div>
+							</li>
+							<li>
+								<div class="price">12,400,000<sup>đ</sup></div>
+							</li>
+						</ul>
+					</li>
+					<li class="product-item">
+						<ul class="product-info">
+							<li>
+								<div class="brand-mark">
+									<img src="..\img\sharp_logo.png" alt="daikin"  >
+								</div>
+							</li>
+							<li>
+								<div class="thumbnail">
+									<a href="Product_6.html"><img src="..\img\may-lanh-sharp-inverter-2-0hp-ah-xp18ymw.webp" alt="" height="250"></a>
+								</div>
+							</li>
+							<li>
+								<div class="product-name"><a href="Product_6.html">Máy lạnh Sharp Inverter 2.0 HP (2 Mã lực) AH-XP18YMW</a></div>
+							</li>
+							<li>
+								<div class="price">12,650,000<sup>đ</sup></div>
+							</li>
+						</ul>
+					</li>
+					<li class="product-item">
+						<ul class="product-info">
+							<li>
+								<div class="brand-mark">
+									<img src="..\img\Hitachi_logo.png" alt="daikin" height="40px">
+								</div>
+							</li>
+							<li>
+								<div class="thumbnail">
+									<a href="Product_7.html"><img src="..\img\may-lanh-hitachi-ej13ckv-1-5hp-1.webp" alt="" height="250"></a>
+								</div>
+							</li>
+							<li>
+								<div class="product-name"><a href="Product_7.html">Máy lạnh Hitachi EJ13CKV (1.5 Hp)</a></div>
+							</li>
+							<li>
+								<div class="price">7,100,000<sup>đ</sup></div>
+							</li>
+						</ul>
+					</li>
+					<li class="product-item">
+						<ul class="product-info">
+							<li>
+								<div class="brand-mark">
+									<img src="..\img\panasonic_logo.png" alt="daikin"  height="80px">
+								</div>
+							</li>
+							<li>
+								<div class="thumbnail">
+									<a href="Product_8.html"><img src="..\img\may-lanh-panasonic-inverter-2-0hp-cu-cs-wpu18xkh-8.webp" alt="" height="250"></a>
+								</div>
+							</li>
+							<li>
+								<div class="product-name"><a href="Product_8.html">Máy lạnh Panasonic inverter 2.0Hp CU/CS-WPU18XKH-8</a></div>
+							</li>
+							<li>
+								<div class="price">19,150,000<sup>đ</sup></div>
+							</li>
+						</ul>
+					</li>
+					<li class="product-item">
+						<ul class="product-info">
+							<li>
+								<div class="brand-mark">
+									<img src="..\img\Daikin_logo.png" alt="daikin">
+								</div>
+							</li>
+							<li>
+								<div class="thumbnail">
+									<a href="Product_1.html"><img src="..\img\may-lanh-daikin-2-5-hp-ftf60xv1v-jpg.webp" alt=""></a>
+								</div>
+							</li>
+							<li>
+								<div class="product-name"><a href="Product_1.html">Máy lạnh Daikin (2.5 Hp) FTF60XV1V</a></div>
+							</li>
+							<li>
+								<div class="price">21,800,000<sup>đ</sup></div>
+							</li>
+						</ul>
+					</li>
+
+					<li class="product-item">
+						<ul class="product-info">
+							<li>
+								<div class="brand-mark">
+									<img src="..\img\Daikin_logo.png" alt="daikin"  >
+								</div>
+							</li>
+							<li>
+								<div class="thumbnail">
+									<a href="Product_2.html"><img src="..\img\may-lanh-daikin-inverter-3-0hp-ftky71wvmv-t.webp" alt=""></a>
+
+								</div>
+							</li>
+							<li>
+								<div class="product-name"><a href="Product_2.html">Máy lạnh Daikin inverter 3.0Hp FTKY71WVMV</a></div>
+							</li>
+							<li>
+								<div class="price">33,200,000<sup>đ</sup></div>
+							</li>
+						</ul>
+					</li>
+					<li class="product-item">
+						<ul class="product-info">
+							<li>
+								<div class="brand-mark">
+									<img src="..\img\LG_logo.png" alt="daikin"  >
+								</div>
+							</li>
+							<li>
+								<div class="thumbnail">
+									<a href="Product_4.html"><img src="..\img\may-lanh-lg-inverter-2-5-hp-v24enf1.webp" alt="" ></a>
+								</div>
+							</li>
+							<li>
+								<div class="product-name"><a href="Product_4.html">Máy lạnh LG inverter 2.5 Hp V24ENF1</a></div>
+							</li>
+							<li>
+								<div class="price">15,750,000<sup>đ</sup></div>
+							</li>
+						</ul>
+					</li>
+					<li class="product-item">
+						<ul class="product-info">
+							<li>
+								<div class="brand-mark">
+									<img src="..\img\panasonic_logo.png" alt="daikin"  >
+								</div>
+							</li>
+							<li>
+								<div class="thumbnail">
+									<a href="Product_5.html"><img src="..\img\may-lanh-panasonic-inverter-1-5hp-cu-cs-wpu12xkh-8.webp" alt="" height="250"></a>
+								</div>
+							</li>
+							<li>
+								<div class="product-name"><a href="Product_5.html">Máy lạnh Panasonic inverter 1.5Hp CU/CS-WPU12XKH-8</a></div>
+							</li>
+							<li>
+								<div class="price">12,400,000<sup>đ</sup></div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+	<div>
+		<footer class="footer">
+			<div>
+				<footer class="footer">
+
+					<ul >
+						<li>THÔNG TIN LIÊN LẠC</li>
+						<li>KD online: <span>0909 811 373- 0902 820 616</span></li>
+						<li>KD Showroom: <span>0901 344 494</span></li>
+						<li>KD Khách tỉnh: <span>0898 477 688</span></li>
+						<li>Hỗ trợ KH: <span>(028) 3878 668-(028) 3890 2828</span></li>
+					</ul>
+					<ul >
+						<li>Bảng báo giá máy lạnh NEW</li>
+						<li>Chính sách bảo hành</li>
+						<li>Chính sách vận chuyển</li>
+						<li>Hướng dẫn mua hàng máy lạnh</li>
+						<li>Chính sách đổi - trả hàng</li>
+						<li>Chính sách bảo mật</li>
+					</ul>
+					<ul>
+						<li>Tích điểm Quà tặng VIP</li>
+						<li>DV vệ sinh máy lạnh</li>
+						<li>Lịch sử mua hàng</li>
+						<li>Tìm hiểu về mua trả góp</li>
+					</ul>
+				</footer>
+		</footer>
+	</div>
+</body>
+</html>
